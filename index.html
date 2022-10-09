@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Documento</title>
+    
+</head>
+
+<body>
+
+    <header>
+<h1>BOX SHADOW GENERATOR</h1>
+
+    </header>
+
+    <div class="container">
+        <form>
+            
+            
+            <h3>desplazamiento horizontal</h3>
+            <input type="range" value="10" id="hShadow" min="-50" max="50">
+            <h3>desplazamiento vertical </h3>
+            <input type="range" value="10" id="vShadow" min="-50" max="50">
+            <h3> blur radius</h3>
+            <input type="range" value="5" id="bRadius" min="0" max="100">
+            <h3> spread radius</h3>
+            <input type="range" value="0" id="sRadius" min="-30" max="100">
+            <h3> Box Shadow color</h3>
+            <input type="color" value="rgba(0, 0, 0, 1)" id="shadowCol">
+            <h3> Box Shadow color opacity</h3>
+            <input type="range" value="0.75" id="opColor" min="0" max="1">
+            <br>
+            <h3>ancho</h3>
+            <input type="range" value="200" id="range1" min="100" max="400">
+            <h3>Alto</h3>
+            <input type="range" value="200" id="range2" min="100" max="400">
+            <h3>Border Radius</h3>
+            <input type="range" value="0" id="borRadius" min="0" max="100">
+            <h3>color del Cuadrado</h3>
+            <input type="color" id="colorSquare">
+
+        </form>
+
+        <div class="tablero">
+            <div class="container_square">
+            <div class="square"></div>
+        </div>
+
+            <div class="salida"> box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 1)</div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
